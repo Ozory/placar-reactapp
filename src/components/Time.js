@@ -1,7 +1,7 @@
 import React from "react";
 
 import BotaoGol from "./BotaoGol";
-export default function Time({ time, gols, event }) {
+export default function Time({time, gols, event}) {
   return (
     <div>
       <h1>{time.nome}</h1>
