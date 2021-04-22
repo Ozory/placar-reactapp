@@ -1,4 +1,5 @@
 pipeline {
+    // Wich node to run
     agent any
 
     stages {
@@ -15,6 +16,12 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
+            }
+        }
+        
+        stage('After') {
+            steps {
+                echo 'Clearning....'
             }
         }
     }
